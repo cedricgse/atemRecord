@@ -1,0 +1,16 @@
+<title>Atem Record Schedule</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<form action="" method="get">
+    <label for="iTitle">Filename:</label><input type="text" name="title" id="iTitle" />
+    <label for="iSource">Source:</label> 
+        <select id="iSource" name="source">
+            <option value="1">Input 1</option>
+            <option value="2">Input 2</option>
+            <option value="3">Input 3</option>
+            <option value="4">Input 4</option>
+        </select>
+    <label for="iStartDate">Start recording at:</label><input type="datetime-local" name="startDate" id="iStartDate" />
+    <label for="iStopDate">Stop recording at:</label><input type="datetime-local" name="stopDate" id="iStopDate" />
+    <input type="submit" value="Add to schedule" />
+</form>
+<p>{{feedback1}} <br />{{feedback2}}</p>
