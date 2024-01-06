@@ -63,6 +63,11 @@ Application for timed recording on Atem Mini Pro
    * Create link
 
      ```bash
+     sudo ln -s /etc/nginx/sites-available/atemRecord /etc/nginx/sites-enabled
+     ```
+   * Restart NGINX
+
+     ```bash
      sudo systemctl restart nginx
      ```
 6. Configure at permissions
@@ -117,4 +122,4 @@ Application for timed recording on Atem Mini Pro
      ```bash
      systemctl enable uwsgi.service
      ```
-8. Webinterface should be showing up when browsing to IP of Pi
+8. Webinterface should now be showing up when browsing to IP of Pi
