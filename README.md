@@ -35,7 +35,7 @@ Application for timed recording on Atem Mini Pro
      ```bash
      nano uwsgi.ini
      ```
-     and change`chdir=/home/raspiStream/atemRecord` to `chdir=/home/USERNAME/atemRecord` in
+     and change`chdir=/home/raspiStream/atemRecord` to `chdir=/home/USERNAME/atemRecord`
    * Delete default site
 
      ```bash
