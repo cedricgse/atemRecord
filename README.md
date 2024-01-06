@@ -30,6 +30,12 @@ Application for timed recording on Atem Mini Pro
    ```
 5. Configure nginx
 
+   * Open uwsgi.ini
+
+     ```bash
+     nano uwsgi.ini
+     ```
+     and change`chdir=/home/raspiStream/atemRecord` to `chdir=/home/USERNAME/atemRecord` in
    * Delete default site
 
      ```bash
