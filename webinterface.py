@@ -21,7 +21,7 @@ def addToSchedule(title, source, startDate, stopDate):
         _stopDate = str(stopDate).split("T") 
         _title = _startDate[0] + " - " + str(title)
         _source = int(source)
-        startPrompt = """echo \"sh startRecording.sh """ + str(_source) + " \'" + _title + """ \'\" | at """ + _startDate[1] + " " + _startDate[0]
+        startPrompt = """echo \"sh startRecording.sh """ + str(_source) + " \'" + _title + """\'\" | at """ + _startDate[1] + " " + _startDate[0]
         stopPrompt = """echo \"sh stopRecording.sh \" | at """ + _stopDate[1] + " " + _stopDate[0]
         stream = subprocess.Popen(startPrompt, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         (_, errStart) = stream.communicate()
